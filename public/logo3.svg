@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="atomGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#35D0E2"/>
+      <stop offset="100%" stop-color="#4A8BFF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1b2458" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0A1024" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0A1024"/>
+  <rect width="100%" height="60%" y="0" fill="url(#glow)"/>
+
+  <!-- Logo group positioned on left -->
+  <g transform="translate(180, 450)">
+    <!-- Atom orbits -->
+    <ellipse cx="0" cy="0" rx="160" ry="115" fill="none" stroke="url(#atomGrad)" stroke-width="18" stroke-linecap="round"/>
+    <ellipse cx="0" cy="0" rx="115" ry="160" fill="none" stroke="url(#atomGrad)" stroke-width="18" stroke-linecap="round" transform="rotate(90)"/>
+    <ellipse cx="0" cy="0" rx="170" ry="90"  fill="none" stroke="url(#atomGrad)" stroke-width="18" stroke-linecap="round" transform="rotate(45)"/>
+    <ellipse cx="0" cy="0" rx="170" ry="90"  fill="none" stroke="url(#atomGrad)" stroke-width="18" stroke-linecap="round" transform="rotate(-45)"/>
+
+    <!-- Nucleus container -->
+    <ellipse cx="0" cy="0" rx="78" ry="120" fill="#0A1024" stroke="url(#atomGrad)" stroke-width="10"/>
+
+    <!-- Candlestick (purple) -->
+    <g fill="#7B61FF">
+      <!-- body -->
+      <rect x="-18" y="-70" width="36" height="140" rx="6"/>
+      <!-- wicks -->
+      <rect x="-5" y="-120" width="10" height="40" rx="5"/>
+      <rect x="-5" y="80" width="10" height="40" rx="5"/>
+      <!-- small adjacent bar -->
+      <rect x="-60" y="-30" width="20" height="60" rx="5" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- Brand text -->
+  <g transform="translate(420, 405)" fill="#FFFFFF">
+    <text x="0" y="0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial" font-size="140" font-weight="700" letter-spacing="0.5">
+      Quantum
+    </text>
+    <text x="0" y="150" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial" font-size="140" font-weight="700" letter-spacing="0.5">
+      Trade
+    </text>
+  </g>
+</svg>

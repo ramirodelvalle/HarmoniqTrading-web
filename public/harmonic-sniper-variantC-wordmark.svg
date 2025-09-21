@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600">
+  <defs>
+  <linearGradient id='goldGrad' x1='0' y1='0' x2='1' y2='1'>
+    <stop offset='0%' stop-color='#DFAF2B'/>
+    <stop offset='50%' stop-color='#FFC94D'/>
+    <stop offset='100%' stop-color='#B57E10'/>
+  </linearGradient>
+</defs>
+  <g transform="translate(200,80)">
+    <g fill="#BA1010" stroke="url(#goldGrad)" stroke-width="12" stroke-linejoin="round">
+      <path d="M-80,180 20,60 160,180 240,240 320,180 460,60 560,180 240,340Z"/>
+    </g>
+    <g transform="translate(240,240)">
+      <circle r="78" fill="none" stroke="url(#goldGrad)" stroke-width="12"/>
+      <circle r="8" fill="#FFC94D"/>
+      <path d="M-110,0 H-70 M110,0 H70 M0,-110 V-70 M0,110 V70" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g transform="translate(740,300)">
+    <text x="0" y="0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial"
+          font-size="112" font-weight="800" fill="#FFC94D" letter-spacing="1.5">HARMONIC</text>
+    <text x="0" y="120" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial"
+          font-size="112" font-weight="800" fill="#C01010" letter-spacing="1.5">SNIPER</text>
+  </g>
+</svg>
